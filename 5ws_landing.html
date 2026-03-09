@@ -131,20 +131,20 @@
     position: relative;
     overflow: hidden;
   }
-  .hero-left::before {
+  /*.hero-left::before {
     content: '';
     position: absolute; top: -60px; right: -60px;
     width: 340px; height: 340px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(184,94,142,0.22) 0%, transparent 70%);
+    background: rgba(184,94,142,0.22);
     pointer-events: none;
   }
   .hero-left::after {
     content: '';
     position: absolute; bottom: 120px; left: -40px;
     width: 200px; height: 200px; border-radius: 50%;
-    background: radial-gradient(circle, var(--cream) 0%, transparent 70%);
+    background: var(--cream);
     pointer-events: none;
-  }
+  }*/
 
   .hero-tag {
     font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
@@ -162,7 +162,7 @@
     opacity: 0; animation: fadeUp 0.9s 0.5s var(--ease-out) forwards;
   }
   .hero-headline em {
-    font-style: italic; color: var(--blush);
+    font-style: italic; color: var(--pink);
     display: block;
   }
 
@@ -187,14 +187,14 @@
   }
   .btn-primary:hover { background: #a0427a; transform: translateY(-2px); }
   .btn-ghost {
-    background: transparent; color: rgba(255,255,255,0.7);
+    background: transparent; color: var(--blush);
     padding: 0.85rem 2.2rem;
     font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
-    border: 1px solid rgba(255,255,255,0.25); cursor: none;
+    border: 1px solid var(--blush); cursor: none;
     transition: border-color 0.3s, color 0.3s;
     text-decoration: none; display: inline-block;
   }
-  .btn-ghost:hover { border-color: var(--pink); color: var(--white); }
+  .btn-ghost:hover { border-color: var(--pink); color: var(--pink); }
 
   .hero-scroll-hint {
     position: absolute; bottom: 2.5rem; left: 4rem;
@@ -219,7 +219,7 @@
 
   /* Hero right — editorial photo collage */
   .hero-right {
-    background: var(--cream);
+    background: var(--pink);
     position: relative;
     overflow: hidden;
     display: grid;
@@ -291,7 +291,7 @@
 
   .section-label {
     font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
-    color: var(--white); margin-bottom: 1rem;
+    color: var(--charcoal); margin-bottom: 1rem;
   }
 
   .about-grid {
@@ -367,7 +367,7 @@
     pointer-events: none;
   }
   .dark-inner { max-width: 1200px; margin: 0 auto; }
-  .dark-section .section-label { color: var(--blush); }
+  .dark-section .section-label { color: var(--pink); }
 
   .dark-section h2 {
     font-family: var(--font-display);
@@ -375,7 +375,7 @@
     font-weight: 300; color: var(--white);
     margin-bottom: 4rem; max-width: 600px; line-height: 1.2;
   }
-  .dark-section h2 em { font-style: italic; color: var(--blush); }
+  .dark-section h2 em { font-style: italic; color: var(--pink); }
 
   .services-grid {
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
@@ -648,7 +648,7 @@
 
 <!-- ── NAV ──────────────────────────────────────────────── -->
 <nav id="nav">
-  <a href="#" class="nav-logo">5<span>W</span> of Fashion</a>
+  <a href="#" class="nav-logo">5<span>W</span>s of Fashion</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#events">Events</a></li>
@@ -679,23 +679,23 @@
   <div class="hero-right">
     <!-- Editorial photo grid — real imagery from 5Ws events represented as styled placeholders -->
     <div class="hero-photo" style="grid-column:1; grid-row:1;">
-      <div style="width:100%;height:100%;background:linear-gradient(160deg,var(--white) 0%,var(--white) 100%);display:flex;align-items:center;justify-content:center;">
+      <div style="width:100%;height:100%;background:linear-gradient(160deg,var(--cream) 0%,var(--cream) 100%);display:flex;align-items:center;justify-content:center;">
         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="20" r="12" stroke="#210747" stroke-width="1.5"/><path d="M10 55c0-11.046 8.954-20 20-20s20 8.954 20 20" stroke="#210747" stroke-width="1.5"/></svg>
       </div>
       <div class="hero-photo-tag">Case Studies</div>
     </div>
     <div class="hero-photo" style="grid-column:2; grid-row:1;">
-      <div style="width:100%;height:100%;background:linear-gradient(160deg,var(--white) 0%, var(--white) 100%);display:flex;align-items:center;justify-content:center;">
-        <p style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:rgba(255,255,255,0.4);text-align:center;padding:1rem;font-style:italic;line-height:1.4;">"Research-led.<br>Principle-driven."</p>
+      <div style="width:100%;height:100%;background:linear-gradient(160deg,var(--cream) 0%, var(--cream) 100%);display:flex;align-items:center;justify-content:center;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--blush);text-align:center;padding:1rem;font-style:italic;line-height:1.4;">"Research-led.<br>Principle-driven."</p>
       </div>
     </div>
     <div class="hero-photo" style="grid-column:1; grid-row:2;">
-      <div style="width:100%;height:100%;background:linear-gradient(160deg,var(--white) 0%, var(--pink) 100%);display:flex;align-items:center;justify-content:center;">
-        <p style="font-family:'Cormorant Garamond',serif;font-size:3rem;color:rgba(255,255,255,0.25);font-weight:600;">Meet the team</p>
+      <div style="width:100%;height:100%;background:linear-gradient(160deg,var(--cream) 0%, var(--cream) 100%);display:flex;align-items:center;justify-content:center;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:3rem;color: var(--pink);font-weight:600;">Meet the team</p>
       </div>
     </div>
     <div class="hero-photo" style="grid-column:2; grid-row:2;">
-      <div style="width:100%;height:100%;background:linear-gradient(160deg,var(--charcoal) 0%,var(--charcoal) 100%);display:flex;align-items:center;justify-content:center;">
+      <div style="width:100%;height:100%;background:linear-gradient(160deg,var(--cream) 0%,var(--cream) 100%);display:flex;align-items:center;justify-content:center;">
         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="44" height="44" rx="2" stroke="#210747" stroke-width="1.5"/><path d="M8 22h44M22 22v30" stroke="#210747" stroke-width="1.5"/><circle cx="15" cy="15" r="3" fill="#b85e8e"/></svg>
       </div>
       <div class="hero-photo-tag">Events Agency</div>
@@ -709,7 +709,7 @@
       </div>
       <div class="stat-item">
         <div class="stat-num">3</div>
-        <div class="stat-label">Audience archetypes</div>
+        <div class="stat-label">Events</div>
       </div>
       <div class="stat-item">
         <div class="stat-num">DMU alumni</div>
@@ -740,14 +740,13 @@
       <div class="about-text reveal">
         <p class="section-label">Our Story</p>
         <h2>Where <em>intelligence</em> and fashion meet.</h2>
-        <p>Founded by De Montfort University’s Fashion Management with Marketing alumni, 5Ws of Fashion is a research and events management consultancy rooted in the business of fashion, bridging the gap between academic insight and real-world practice.
-We don’t just host events - we create environments for immersive learning experiences, foundations for unpopular fashion perspectives to be expressed, genuine alignment with sustainable practice can be fostered, and where Leicester is championed as the British fashion hub where our story began.
-In the A for Access and Equity - change fashion insights to fashion insights and modules without extortionate prices - because expertise is kinda deep and can open us up to claims if something goes wrong, and if we are trying to have university partners, we wouldn't want to look like we are trying to steal their business too.Founded by Rumbie Makonise after recognising the gap between fashion management theory and real-world practice, 5 Ws of Fashion is a research and events talent agency that gives conscious consumers, brands, and the next generation of fashion professionals a space to meet, learn, and lead.</p>
-        <p>We don't just host events. We create environments where unpopular opinions can be spoken freely, where businesses align authentically with sustainable values, and where Leicester reclaims its rightful place at the forefront of British fashion.</p>
-        <a href="#" class="about-link">Read our full story</a>
+        <p>Founded by De Montfort University’s Fashion Management with Marketing alumni, 5Ws of Fashion is a research and events management agency rooted in the business of fashion, bridging the gap between academic insight and real-world practice.
+        </p><p>We don’t just host events - we create environments for immersive learning experiences, foundations for unpopular fashion perspectives to be expressed, genuine alignment with sustainable practice can be fostered, and where Leicester is championed as the British fashion hub where our story began.</p>
+        <a href="#blog" class="about-link">Read our full story</a>
       </div>
 
       <div class="craft-pillars reveal">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:3rem;color: var(--pink);font-weight:600;">Meet the team</p>
         <div class="craft-pill">
           <div class="craft-letter">Mine</div>
           <div class="craft-title">Collaboration</div>
@@ -764,7 +763,22 @@ While living in Switzerland, she founded an accessory brand that deepened her in
 </div>
         </div>
         <div class="craft-pill">
-          <div class="craft-letter">S</div>
+          <div class="craft-letter">Menali</div>
+          <div class="craft-title">Collaboration</div>
+          <div class="craft-desc">Mine Yeter is a Turkish designer raised in England, shaped by the richness of two cultures that inform both her cr$
+Raised within the structure and multicultural landscape of British society, Mine developed a balanced perspective thatIn 2025, she completed a Master of Arts in Fashion Management with Marketing, dedicating her research to the leather iMine currently contributes as a designer to the DMU Museum’s Artefacts Live exhibition project while working as a Juni
+</div>
+        </div>
+        <div class="craft-pill">
+          <div class="craft-letter">Karen</div>
+          <div class="craft-title">Responsibility</div>
+          <div class="craft-desc">Rumbie is a founder and fashion entrepreneur, born in Zimbabwe and raised in England. She is a published children’s$
+Her interest in fashion began in her teenage years. Although accepted into fashion design school, she chose to pursue During her legal studies, Rumbie distinguished herself as driven and strategic. She was awarded Best Advocate and the $
+While living in Switzerland, she founded an accessory brand that deepened her interest in commercial law and the hard 
+</div>
+        </div>
+        <div class="craft-pill">
+          <div class="craft-letter">Samia</div>
           <div class="craft-title">Access &amp; Equity</div>
           <div class="craft-desc">Samia Irshad, born in Qatar and raised in Abu Dhabi, is an interdisciplinary researcher and creative strategist. He$
 Driven by a desire to explore the creative dimensions of fashion and innovation, she completed a Master of Arts in Fas Going back to her roots, she is currently undertaking a PhD that investigates the ethical and socio-technical implicat$
@@ -772,7 +786,7 @@ Alongside her academic research, she draws on her background in PR and integrate
 </div>
         </div>
         <div class="craft-pill">
-          <div class="craft-letter">F</div>
+          <div class="craft-letter">Blessing</div>
           <div class="craft-title">Future-thinking</div>
           <div class="craft-desc">Circularity, longevity, and next-generation values are the foundations of everything we build.</div>
         </div>
@@ -818,6 +832,9 @@ Alongside her academic research, she draws on her background in PR and integrate
         <div class="service-title">Connect the Dots</div>
         <div class="service-desc">We work with businesses committed to sustainable values, identifying specific business needs and designing the right conversations for the right audience — in their setting to assist them.With De Montfort University partnerships and speakers including SDG Impact researchers, we ground every conversation in evidence.</div>
       </div>
+    </div>
+    <div class="cta-btns reveal">
+      <a href="#partner" class="btn-ghost">Partner With Us</a>
     </div>
   </div>
 </section>
@@ -878,11 +895,16 @@ Alongside her academic research, she draws on her background in PR and integrate
   </div>
 </section>
 
+<!-- ── QUOTE ─────────────────────────────────────────────── -->
+<section class="quote-section">
+  <p class="quote-text">"For the sustainable fashion model to succeed, behind-the-scenes expertise need to come to light publicly"</p>
+  <p class="quote-attr">— Rumbie Makonise, Founder, 5Ws of Fashion</p>
+</section>
+
 <!-- ── BLOG SECTION ───────────────────────────────────────── -->
 <section class="blog-section" id="blog">
   <div class="section-inner">
     <h2 class="section-label">Our Blog</h2>
-    <h2>Rooted in Opulence</h2>
     <p>Explore our latest thoughts, insights, and updates on fashion and sustainability.</p>
     <iframe 
       src="https://rootedinopulence.wordpress.com" 
@@ -890,12 +912,6 @@ Alongside her academic research, she draws on her background in PR and integrate
       title="Rooted in Opulence Blog">
     </iframe>
   </div>
-</section>
-
-<!-- ── QUOTE ─────────────────────────────────────────────── -->
-<section class="quote-section">
-  <p class="quote-text">"For the sustainable fashion model to succeed, behind-the-scenes expertise need to come to light publicly"</p>
-  <p class="quote-attr">— Rumbie Makonise, Founder, 5Ws of Fashion</p>
 </section>
 
 <!-- ── AUDIENCE PERSONAS ──────────────────────────────────── -->
@@ -1001,7 +1017,7 @@ Alongside her academic research, she draws on her background in PR and integrate
     <div class="footer-grid">
       <div>
         <div class="footer-brand-name">5<span>W</span>s of Fashion</div>
-        <p class="footer-tagline">A fashion research &amp; events talent agency promoting conscious consumption. Owned by 14fashion Group Ltd.</p>
+        <p class="footer-tagline">A fashion research &amp; events management agency advancing conscious, uniting consumers, practitioners and academics with fashion brands. Owned by 14fashion Group Ltd.</p>
       </div>
       <div class="footer-col">
         <h4>Navigate</h4>
